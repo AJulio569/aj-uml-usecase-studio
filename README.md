@@ -1,9 +1,23 @@
 # AJ UML UseCase Studio
+<p align="center">
+<img width="1536" height="1024" alt="fondo" src="https://github.com/user-attachments/assets/21b91204-61fe-4a64-a125-08bd2219378e" />
+</p>
+<p align="center">
+  <strong>Genera diagramas de casos de uso UML automáticamente desde lenguaje natural</strong>
+</p>
+
+## Descripción
 
 AJ UML UseCase Studio es una aplicación web educativa para crear diagramas de casos de uso UML a partir de actores y requerimientos escritos en lenguaje natural. Está pensada como herramienta de apoyo para análisis de requerimientos, modelado UML y presentaciones académicas o de portafolio.
 
 La aplicación interpreta el texto ingresado, detecta actores, casos de uso y relaciones `<<include>>` / `<<extend>>`, y genera un diagrama visual exportable en SVG o PNG.
 
+Es ideal para:
+
+- Estudiantes de ingeniería de software
+- Analistas de requerimientos
+- Portafolios profesionales
+  
 ## Demo
 
 La demo del proyecto estará disponible en GitHub Pages:
