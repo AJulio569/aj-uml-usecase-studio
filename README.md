@@ -6,10 +6,16 @@ La aplicación interpreta el texto ingresado, detecta actores, casos de uso y re
 
 ## Demo
 
-Cuando el repositorio esté publicado con GitHub Pages, la demo estará disponible en:
+La demo del proyecto estará disponible en GitHub Pages:
 
 ```text
-https://<tu-usuario>.github.io/aj-uml-usecase-studio/
+https://ajulio569.github.io/aj-uml-usecase-studio/
+```
+
+Repositorio oficial:
+
+```text
+https://github.com/AJulio569/aj-uml-usecase-studio
 ```
 
 ## Características
@@ -52,7 +58,7 @@ Flujo principal de uso:
 Clona el repositorio:
 
 ```bash
-git clone https://github.com/<tu-usuario>/aj-uml-usecase-studio.git
+git clone https://github.com/AJulio569/aj-uml-usecase-studio.git
 cd aj-uml-usecase-studio
 ```
 
@@ -154,11 +160,12 @@ Resultado esperado:
 
 El proyecto incluye un workflow de GitHub Actions que compila la aplicación y publica `dist` en GitHub Pages cada vez que se actualiza la rama `main`.
 
-Después de subir el repositorio a GitHub:
+Después de subir cambios a GitHub:
 
 1. Entra a `Settings > Pages`.
 2. En `Source`, selecciona `GitHub Actions`.
 3. Revisa la pestaña `Actions` y confirma que el despliegue termine correctamente.
+4. Abre la demo en `https://ajulio569.github.io/aj-uml-usecase-studio/`.
 
 ## Referencia UML
 
