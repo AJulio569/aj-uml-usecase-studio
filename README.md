@@ -1,10 +1,14 @@
 # AJ UML UseCase Studio
+
 <p align="center">
 <img width="1536" height="1024" alt="fondo" src="https://github.com/user-attachments/assets/21b91204-61fe-4a64-a125-08bd2219378e" />
 </p>
+
 <p align="center">
   <strong>Genera diagramas de casos de uso UML automáticamente desde lenguaje natural</strong>
 </p>
+
+---
 
 ## Descripción
 
@@ -17,6 +21,7 @@ Es ideal para:
 - Estudiantes de ingeniería de software
 - Analistas de requerimientos
 - Portafolios profesionales
+---
   
 ## Demo
 
@@ -31,6 +36,12 @@ Repositorio oficial:
 ```text
 https://github.com/AJulio569/aj-uml-usecase-studio
 ```
+---
+## Documentación
+
+- [Manual de usuario](MANUAL.md)
+- [Especificaciones del proyecto](ESPECIFICACIONES.md)
+---
 
 ## Características
 
@@ -42,6 +53,7 @@ https://github.com/AJulio569/aj-uml-usecase-studio
 - Modo claro y oscuro.
 - Exportación del diagrama como SVG o PNG.
 - Interfaz responsive construida con React, Vite y Tailwind CSS.
+---
 
 ## Vista General
 
@@ -52,6 +64,7 @@ Flujo principal de uso:
 3. Describir los requerimientos o funcionalidades.
 4. Revisar el diagrama generado automáticamente.
 5. Exportar el resultado en SVG o PNG.
+---
 
 ## Tecnologías
 
@@ -61,11 +74,13 @@ Flujo principal de uso:
 - Tailwind CSS
 - Lucide React
 - SVG nativo
+---
 
 ## Requisitos Previos
 
 - Node.js 18 o superior.
 - npm 9 o superior.
+---
 
 ## Instalación
 
@@ -93,6 +108,7 @@ Abre la aplicación en el navegador:
 ```text
 http://127.0.0.1:5173
 ```
+---
 
 ## Scripts Disponibles
 
@@ -113,6 +129,7 @@ npm run preview
 ```
 
 Sirve localmente la versión generada para producción.
+---
 
 ## Estructura del Proyecto
 
@@ -136,6 +153,7 @@ aj-uml-usecase-studio/
 ├── tsconfig.json
 └── vite.config.js
 ```
+---
 
 ## Ejemplo de Uso
 
@@ -169,6 +187,7 @@ Resultado esperado:
 - `Registro` se conecta con `Validar email` mediante `<<include>>`.
 - `Descuento` extiende a `Pago` mediante `<<extend>>`.
 - Todos los casos de uso quedan dentro del límite del sistema `Registrar Producto`.
+---
 
 ## Despliegue En GitHub Pages
 
@@ -180,6 +199,7 @@ Después de subir cambios a GitHub:
 2. En `Source`, selecciona `GitHub Actions`.
 3. Revisa la pestaña `Actions` y confirma que el despliegue termine correctamente.
 4. Abre la demo en `https://ajulio569.github.io/aj-uml-usecase-studio/`.
+---
 
 ## Referencia UML
 
@@ -187,14 +207,22 @@ La aplicación toma como referencia la especificación UML 2.5.1 publicada por O
 
 https://www.omg.org/spec/UML/2.5.1/
 
+---
+
 ## Estado Del Proyecto
 
 Versión inicial funcional para aprendizaje, demostraciones académicas y portafolio profesional.
+
+---
 
 ## Autor
 
 Desarrollado por Andres como proyecto educativo de análisis de requerimientos y modelado UML.
 
+---
+
 ## Licencia
 
 Este proyecto está publicado bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
+---
