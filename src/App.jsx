@@ -27,6 +27,15 @@ export default function App() {
     () => parseUseCaseInput(actorsInput, requirementsInput, systemName),
     [actorsInput, requirementsInput, systemName]
   );
+  const educationalNotes = useMemo(() => {
+    const notes = new Map();
+    model.relations.forEach((relation) => {
+      if (!notes.has(relation.kind)) {
+        notes.set(relation.kind, relation);
+      }
+    });
+    return Array.from(notes.values());
+  }, [model.relations]);
 
   return (
     <main className={darkMode ? "dark" : ""}>
@@ -110,14 +119,14 @@ export default function App() {
 
             <Panel title="Modo Educativo" icon={<BookOpen size={18} />}>
               <div className="space-y-3">
-                {model.relations.length === 0 ? (
+                {educationalNotes.length === 0 ? (
                   <p className="text-sm text-slate-500 dark:text-slate-400">
                     Genera relaciones al escribir requerimientos.
                   </p>
                 ) : (
-                  model.relations.map((relation) => (
+                  educationalNotes.map((relation) => (
                     <div
-                      key={relation.id}
+                      key={relation.kind}
                       className="rounded-md border border-slate-200 bg-slate-50 p-3 text-sm dark:border-slate-700 dark:bg-slate-900"
                     >
                       <p className="font-semibold capitalize text-slate-800 dark:text-slate-100">
@@ -382,7 +391,22 @@ function serializeSvg(svg) {
   const clone = svg.cloneNode(true);
   clone.setAttribute("xmlns", "http://www.w3.org/2000/svg");
   inlineSvgStyles(svg, clone);
+  addExportBackground(svg, clone);
   return new XMLSerializer().serializeToString(clone);
+}
+
+function addExportBackground(source, target) {
+  const { width, height } = source.viewBox.baseVal;
+  const styles = window.getComputedStyle(source);
+  const background = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+
+  background.setAttribute("x", "0");
+  background.setAttribute("y", "0");
+  background.setAttribute("width", String(width));
+  background.setAttribute("height", String(height));
+  background.setAttribute("fill", styles.backgroundColor || "#ffffff");
+
+  target.insertBefore(background, target.firstChild);
 }
 
 function inlineSvgStyles(source, target) {
